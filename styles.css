@@ -1,4 +1,105 @@
-/* This is your CSS files */
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-    color: black
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* here are the header styles */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #dc4c3e;
+  color: #ffffff;
+}
+
+
+
+.counter {
+  margin-left: auto;
+}
+
+/* here are the layout styles */
+.container {
+  display: flex;
+}
+
+
+nav {
+  width: 300px;
+  background: #fefbf2;
+  color: #000000;
+  padding: 16px;
+}
+
+main {
+  flex: 1;
+}
+
+/* here are the responsive styles */
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+}
+
+
+/* here are the navigation styles */
+nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.count {
+  color: #7e7d79;
+  font-size: 12px;
+}
+
+/* here are the main content styles */
+main {
+  padding: 24px 40px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+
+.task-list input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #7e7d79;
+  border-radius: 50%;
+}
+
+.task-list input:checked {
+  background: #7e7d79;
+}
+
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
 }
